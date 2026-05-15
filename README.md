@@ -1,30 +1,38 @@
-# 5. 실습 / Hands-on Lab / 实践环节
+# 5. Hands-on Lab: Deep Dive into Open Source Giants
 
-## Mission 1: 第一次克隆——用 Git 克隆 Git
-- **总提交数:** 74,532 (Meta-experience: Cloning Git with Git)
-- **最初提交日期/作者:** 2005-04-07 / Linus Torvalds
-- **最初提交信息:** `Initial revision of "git", the information manager from hell`
+This lab is a documentation of my exploration into some of the most influential codebases in the world. As a senior CS student, this experience provided a unique perspective on industrial-scale software engineering.
 
-## Mission 2: 探索 Linux 内核历史
-- **前 10 名贡献者:** Linus Torvalds, David S. Miller, Mauro Carvalho Chehab 等
-- **最有趣的 3 个文件夹:** 1. `arch/`: 硬件架构相关代码
-    2. `drivers/`: 全球各种硬件的驱动程序
-    3. `fs/`: 文件系统实现
-- **MAINTAINERS 喜欢的一行:** `THE REST: Buried alive in requests`
+## Mission 1: Meta-Experience — Cloning Git with Git
+It felt quite symbolic to use Git to pull its own source code. 
+- **Total Commits:** Over 74,532. The scale of development since its inception is truly staggering.
+- **The Origin:** Created by Linus Torvalds on April 7, 2005.
+- **Initial Message:** `"Initial revision of "git", the information manager from hell"`. It’s classic Linus—witty, blunt, and slightly chaotic. It’s a great reminder that even world-changing tools started with a bit of "hellish" frustration.
 
-## Mission 3: 选择本领域的著名仓库 (Java)
-- **仓库名称:** [google/guava](https://github.com/google/guava)
-- **选择理由:** 作为 CS 专业学生，学习 Java 必看 Google 的工业级代码规范。
-- **最近一个月的活动量:** 50 个 Commits
+## Mission 2: Decoding the Linux Kernel
+The Linux kernel is a monster. I had to use the `--depth=1` flag just to prevent my system from crawling to a halt during the clone.
+- **Top Contributors:** Still dominated by Linus Torvalds, but followed closely by legends like David S. Miller.
+- **Notable Directories:** 1. `arch/`: This is where the magic happens for hardware abstraction—seeing how the kernel talks to different CPUs is fascinating.
+    2. `drivers/`: The sheer volume of code here is mind-blowing. It covers almost every piece of hardware ever made.
+    3. `fs/`: Studying file system implementations here is essentially a masterclass in data persistence.
+- **A Human Touch:** Found this line in the MAINTAINERS file: `THE REST: Buried alive in requests`. It’s a hilarious yet honest look at the burnout that even top-tier maintainers face.
 
-## Mission 4: 追随一个人的足迹
-- **所选贡献者:** cgdecker (Colin Decker)
-- **印象最深的信息:** `Standardize charset usage`
-- **主要修改范围:** `guava/src/com/google/common/io` (IO操作模块)
+## Mission 3: Domain Selection — Java (Google Guava)
+Since my career focus is on **Java development**, I chose to explore Google’s Guava library.
+- **Repository:** [google/guava](https://github.com/google/guava)
+- **Rationale:** In the Java world, Google’s code is the gold standard for engineering excellence. Studying Guava isn't just about learning utilities; it’s about understanding the "Google Way" of writing clean, robust code.
+- **Velocity:** Roughly 50 commits in the last month. It’s impressive to see such consistent maintenance on a project this mature.
 
-## Mission 5: 测量你与第一次 PR 的距离
-- **挑战 Issue:** [Guava Good First Issues](https://github.com/google/guava/issues?q=is:open+label:%22good+first+issue%22)
-- **所需技术栈:** Java 8+, Maven, JUnit
-- **CONTRIBUTING.md 总结:** 1. 必须签署 Google 的 CLA 贡献者协议。
-    2. 严格遵守 Google Java Style Guide 编码规范。
-    3. 所有的 Bug Fix 或新功能必须包含对应的单元测试。
+## Mission 4: Tracking the Experts
+- **Contributor:** cgdecker (Colin Decker)
+- **Key Insight:** Looking through his commits like `Standardize charset usage`, I realized that great engineering isn't always about "flashy" features. Much of it is about the meticulous standardization and refactoring that keeps a massive project sustainable.
+
+## Mission 5: The Path to My First PR
+- **The Target:** Browsed the "good first issue" labels in the Guava tracker.
+- **Requirements:** Deep familiarity with Java 8+, Maven, and a "test-first" mindset using JUnit.
+- **Key Takeaways from CONTRIBUTING.md:** 1. **The CLA:** Signing the Contributor License Agreement is a non-negotiable first step.
+    2. **Code Style:** Strictly adhering to the Google Java Style Guide is mandatory.
+    3. **Testing:** No PR is even considered without corresponding unit tests. This level of rigor is exactly why the library is so stable.
+
+---
+*Completed by: l13158242015*
+*Date: May 15, 2026*
